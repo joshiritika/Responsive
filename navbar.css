@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+/* % parents k according apne height width set krta hai*/
+#main{
+    height:100%;
+    width:100%;
+}
+.nav{
+    height:50px;
+    width:100%;
+    display:flex;
+    /*background-color: aqua;*/
+    align-items: center;
+    justify-content: space-between;
+    font-family:"Times New Roman", Times, serif;
+    padding:0 4vw;
+}
+.nav-part2{
+    display:flex;
+    align-items: center;
+    gap:3vw;
+}
+.nav h2{
+    font-size:25px;
+    font-weight:800px;
+}
+.nav h4{
+    font-size:15px;
+    font-weight:800px;
+}
+.nav i{
+    font-size:2vw;
+    font-weight:500;
+    display:none;
+}
+.content{
+    height:calc(100% -  50px);
+    width:100%;
+    display:flex;
+    position:relative;
+}
+.right{
+    height:100%;
+    width:50%;
+}
+.left{
+    height:100%;
+    width: 50%;
+    padding:90px 90px;
+    background-color: rgb(236,222,253);
+}
+.left h2{
+    font-size:4vw;
+    line-height:4.5vw;
+}
+.left h2 span{
+    color:rgb(160, 92, 242);
+}
+.left p{
+    font-size:16px;
+    font-weight:500px;
+    font-family:sans-serif;
+    color:rgb(117, 114, 114);
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.left button{
+    padding:5px 6px; 
+    background-color:rgb(160, 92, 242);
+    color:white;
+    font-size:20px;
+    border:none;
+    border-radius:5px;
+    margin-top:20px;
+}
+.right img{
+    height:80%;
+    width: 100%;
+    padding-top:50px;
+} 
+@media(max-width:600px){
+    .nav{
+        background-color: rgb(235,16,141);
+        color:white;
+        padding:0 5vw;
+        overflow:hidden;
+    }
+    .nav h2{
+        font-size:5vw;
+
+    }
+    .nav h4{
+        font-size:4vw;
+        display:none;
+    }
+    .nav i{
+        display:initial;
+        color:white;
+        font-weight:800px;
+    }
+    .left{
+        width:100%;
+    }
+    .right{
+        width:100%;
+    }
+    .content{
+        height:calc(100% - 50px);
+        flex-direction: column;
+        
+        
+    }
+}
